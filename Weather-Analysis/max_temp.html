@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Analysis</title>
+</head>
+<body class = "body">
+    <nav class="navbar navbar-expand-lg">
+        <div class = "container-fluid navbar-custom">
+            <a class="navbar-brand" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Dropdown menu-->
+            <div class="dropdown" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item-dropdown">
+                        <a class="nav-link-dropdown-toggle" href="#" id="navbarSupportedContent" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                        Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarSupportedContent">
+                            <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href = "wind-speed.html">Wind Speed</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        </div>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "comparisons.html" style="color: black;">Comparisons</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href="data.html" style="color: black;">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+        <div class = "row">
+            <div class="col-md-5">
+                <h1 style = "color: #0BADA6;">Max Temperature</h1>
+                <hr class = "my-4">
+                <img src = "Fig1.png" class = "float-left"width="620px"/>
+                <br>
+                As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude).
+                More interestingly, however, is the fact that the souther hempisphere tends to be warmer this time of year than the norther hempishere.
+                This may be due to the tilt of the Earth at the time of the year this data was gathered.
+            </div>
+            <div class="col-lg-5">
+                <div class="box">
+                  <h2 style="color: #0BADA6;">Visualizations</h2>
+                  <div class="container">
+                        <div class="row" >
+                          <div class="col-6">
+                            <a href="max_temp.html">
+                              <img class="panel" src="Fig1.png" width="230px" height="190px" alt="Max Temp Chart">
+                            </a>
+                          </div>
+                          <div class="col-6">
+                            <a href="humidity.html">
+                              <img class="panel" src="Fig2.png" width="230px" height="190px" alt="Humidity Chart">
+                            </a>
+                          </div>
+                        </div>
+            
+                        <div class="row" >
+                          <div class="col-6">
+                            <a href="cloudiness.html">
+                              <img class="panel" src="Fig3.png" width="230px" height="190px" alt="Cloudiness Chart">
+                            </a>
+                          </div>
+                          <div class="col-6">
+                            <a href="wind-speed.html">
+                              <img class="panel" src="Fig4.png" width="230px" height="190px" alt="Wind Speed Chart">
+                            </a>
+                          </div>
+                        </div>
+                 </div>
+          </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+</body>
+</html>
